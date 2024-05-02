@@ -119,7 +119,7 @@
       CHECK ls_invoice_items-mwskz IS NOT INITIAL.
       SELECT SINGLE *
         FROM zetr_t_taxmc
-        WHERE kalsm = 'TAXTR'
+        WHERE kalsm = @iv_kalsm
           AND mwskz = @ls_invoice_items-mwskz
         INTO @DATA(ls_tax_match).
       IF ms_document-taxty IS NOT INITIAL.

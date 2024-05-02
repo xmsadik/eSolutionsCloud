@@ -63,7 +63,7 @@
                  CAST( left( DocumentDate, 4 ) AS NUMC ) AS gjahr,
                  'LIKP' AS awtyp
             FROM i_deliverydocument AS d
-            LEFT OUTER JOIN i_salesorganization AS s
+            INNER JOIN i_salesorganization AS s
               ON d~salesorganization = s~salesorganization
             WHERE companycode IN @lt_bukrs_range
               AND DeliveryDocument IN @lt_belnr_range

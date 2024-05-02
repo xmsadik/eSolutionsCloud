@@ -91,13 +91,6 @@
     METHODS fill_common_delivery_data
       RAISING
         zcx_etr_regulative_exception .
-    METHODS generate_delivery_id
-      IMPORTING
-        iv_save_db               TYPE abap_boolean DEFAULT abap_true
-      RETURNING
-        VALUE(rv_invoice_number) TYPE zetr_e_docno
-      RAISING
-        zcx_etr_regulative_exception .
     METHODS build_delivery_data_mkpf_head
       RAISING
         zcx_etr_regulative_exception .

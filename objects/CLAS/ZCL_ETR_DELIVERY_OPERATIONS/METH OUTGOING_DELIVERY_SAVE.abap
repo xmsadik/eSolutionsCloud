@@ -8,17 +8,17 @@
     CHECK sy-subrc NE 0.
 
     CASE iv_awtyp.
-      WHEN 'VBRK'.
+      WHEN 'LIKP'.
         rs_document = outgoing_delivery_save_likp( iv_awtyp = iv_awtyp
                                                    iv_bukrs = iv_bukrs
                                                    iv_belnr = iv_belnr
                                                    iv_gjahr = iv_gjahr ).
-      WHEN 'RMRP'.
+      WHEN 'MKPF'.
         rs_document = outgoing_delivery_save_mkpf( iv_awtyp = iv_awtyp
                                                    iv_bukrs = iv_bukrs
                                                    iv_belnr = iv_belnr
                                                    iv_gjahr = iv_gjahr ).
-      WHEN 'BKPF' OR 'BKPFF' OR 'REACI'.
+      WHEN 'BKPF' OR 'BKPFF'.
         rs_document = outgoing_delivery_save_bkpf( iv_awtyp = iv_awtyp
                                                    iv_bukrs = iv_bukrs
                                                    iv_belnr = iv_belnr

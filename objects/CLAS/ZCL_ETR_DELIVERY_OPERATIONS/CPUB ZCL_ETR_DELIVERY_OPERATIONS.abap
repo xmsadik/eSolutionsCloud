@@ -12,7 +12,24 @@ CLASS zcl_etr_delivery_operations DEFINITION
         aliass          TYPE zetr_e_alias,
         registerdate    TYPE datum,
         title           TYPE zetr_e_title,
-      END OF mty_partner_register_data.
+      END OF mty_partner_register_data,
+      BEGIN OF mty_outgoing_document_status,
+        bukrs TYPE zetr_t_ogdlv-bukrs,
+        dlvii TYPE zetr_t_ogdlv-dlvii,
+        sndus TYPE zetr_t_ogdlv-sndus,
+        dlvds TYPE zetr_t_ogdlv-dlvds,
+        snddt TYPE zetr_t_ogdlv-snddt,
+        stacd TYPE zetr_t_ogdlv-stacd,
+        staex TYPE zetr_t_ogdlv-staex,
+        resst TYPE zetr_t_ogdlv-resst,
+        radsc TYPE zetr_t_ogdlv-radsc,
+        rsend TYPE zetr_t_ogdlv-rsend,
+        envui TYPE zetr_t_ogdlv-envui,
+        dlvui TYPE zetr_t_ogdlv-dlvui,
+        dlvno TYPE zetr_t_ogdlv-dlvno,
+        dlvqi TYPE zetr_t_ogdlv-dlvqi,
+        ruuid TYPE zetr_t_ogdlv-ruuid,
+      END OF mty_outgoing_document_status.
 
     CLASS-METHODS factory
       IMPORTING
@@ -86,5 +103,14 @@ CLASS zcl_etr_delivery_operations DEFINITION
         !iv_gjahr          TYPE gjahr
       RETURNING
         VALUE(rs_document) TYPE zetr_t_ogdlv
+      RAISING
+        zcx_etr_regulative_exception .
+
+    METHODS outgoing_delivery_status
+      IMPORTING
+        !iv_document_uid TYPE sysuuid_c22
+        !iv_db_write     TYPE abap_boolean DEFAULT abap_true
+      RETURNING
+        VALUE(rs_status) TYPE mty_outgoing_document_status
       RAISING
         zcx_etr_regulative_exception .

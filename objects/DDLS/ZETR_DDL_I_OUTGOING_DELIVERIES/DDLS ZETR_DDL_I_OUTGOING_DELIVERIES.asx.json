@@ -29,6 +29,13 @@
     "DDLANGUAGE":"E",
     "AS4LOCAL":"N",
     "DDTEXT":"Outgoing Deliveries"
+   },
+   {
+    "DDLNAME":"ZETR_DDL_I_OUTGOING_DELIVERIES",
+    "STRUCOBJN":"ZETR_DDL_I_OUTGOING_DELIVERIES",
+    "DDLANGUAGE":"T",
+    "AS4LOCAL":"N",
+    "DDTEXT":"Giden İrsaliyeler"
    }
   ]
  },

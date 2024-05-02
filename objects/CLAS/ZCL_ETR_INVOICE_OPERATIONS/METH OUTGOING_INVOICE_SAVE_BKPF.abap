@@ -85,8 +85,8 @@
            financialaccounttype AS koart,
            customer AS kunnr,
            supplier AS lifnr,
-           amountintransactioncurrency AS wrbtr,
-           amountincompanycodecurrency AS dmbtr,
+           abs( amountintransactioncurrency ) AS wrbtr,
+           abs( amountincompanycodecurrency ) AS dmbtr,
            taxcode AS mwskz,
            profitcenter AS gsber,
            plant AS werks

@@ -60,6 +60,17 @@
     "SCRTEXT_S":"Prn.doc.dt",
     "SCRTEXT_M":"Prn.doc.date",
     "SCRTEXT_L":"Printed document date"
+   },
+   {
+    "ROLLNAME":"ZETR_E_PDDAT",
+    "DDLANGUAGE":"T",
+    "AS4LOCAL":"N",
+    "AS4VERS":0,
+    "DDTEXT":"Matbu belge tarihi",
+    "REPTEXT":"Matbu belge tarihi",
+    "SCRTEXT_S":"Matbu b.tr",
+    "SCRTEXT_M":"Matbu blg.tr",
+    "SCRTEXT_L":"Matbu belge tarihi"
    }
   ]
  },

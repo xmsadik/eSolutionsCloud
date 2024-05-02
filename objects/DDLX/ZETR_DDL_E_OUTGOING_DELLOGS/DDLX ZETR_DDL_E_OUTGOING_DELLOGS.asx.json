@@ -208,6 +208,34 @@
     "ELEMENT":"LOGUUID",
     "NAME":"UI.FACET$1$.LABEL",
     "TEXT":"Logs"
+   },
+   {
+    "DDLXNAME":"ZETR_DDL_E_OUTGOING_DELLOGS",
+    "DDLANGUAGE":"T",
+    "ELEMENT":"",
+    "NAME":"UI.HEADERINFO.TITLE.LABEL",
+    "TEXT":"Loglar"
+   },
+   {
+    "DDLXNAME":"ZETR_DDL_E_OUTGOING_DELLOGS",
+    "DDLANGUAGE":"T",
+    "ELEMENT":"",
+    "NAME":"UI.HEADERINFO.TYPENAME",
+    "TEXT":"Log"
+   },
+   {
+    "DDLXNAME":"ZETR_DDL_E_OUTGOING_DELLOGS",
+    "DDLANGUAGE":"T",
+    "ELEMENT":"",
+    "NAME":"UI.HEADERINFO.TYPENAMEPLURAL",
+    "TEXT":"Loglar"
+   },
+   {
+    "DDLXNAME":"ZETR_DDL_E_OUTGOING_DELLOGS",
+    "DDLANGUAGE":"T",
+    "ELEMENT":"LOGUUID",
+    "NAME":"UI.FACET$1$.LABEL",
+    "TEXT":"Loglar"
    }
   ]
  },

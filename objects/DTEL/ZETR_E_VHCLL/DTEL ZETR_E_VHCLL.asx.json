@@ -60,6 +60,17 @@
     "SCRTEXT_S":"Vehicle pl",
     "SCRTEXT_M":"Vehicle plate",
     "SCRTEXT_L":"Vehicle plate"
+   },
+   {
+    "ROLLNAME":"ZETR_E_VHCLL",
+    "DDLANGUAGE":"T",
+    "AS4LOCAL":"N",
+    "AS4VERS":0,
+    "DDTEXT":"Araç plaka",
+    "REPTEXT":"Araç plaka",
+    "SCRTEXT_S":"Araç plaka",
+    "SCRTEXT_M":"Araç plaka",
+    "SCRTEXT_L":"Araç plaka"
    }
   ]
  },

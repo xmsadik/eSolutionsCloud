@@ -108,6 +108,10 @@ CLASS zcl_etr_outgoing_delivery DEFINITION
     TYPES ebelp TYPE n LENGTH 5.
     TYPES matnr TYPE matnr.
     TYPES maktx TYPE zetr_e_descr.
+    TYPES kunnr TYPE zetr_e_partner.
+    TYPES lifnr TYPE zetr_e_partner.
+    TYPES umwrk TYPE zetr_e_umwrk.
+    TYPES umlgo TYPE zetr_e_umlgo.
     TYPES END OF mty_mseg.
 
     TYPES BEGIN OF mty_ekpo.
@@ -209,7 +213,7 @@ CLASS zcl_etr_outgoing_delivery DEFINITION
     CLASS-METHODS factory
       IMPORTING
         !iv_document_uuid TYPE sysuuid_c22
-        !iv_preview       TYPE abap_boolean
+        !iv_preview       TYPE abap_boolean OPTIONAL
       RETURNING
         VALUE(ro_object)  TYPE REF TO zcl_etr_outgoing_delivery
       RAISING
@@ -233,5 +237,13 @@ CLASS zcl_etr_outgoing_delivery DEFINITION
         !iv_tax_id         TYPE zetr_e_taxid OPTIONAL
       RETURNING
         VALUE(rs_data)     TYPE zif_etr_common_ubl21=>partytype
+      RAISING
+        zcx_etr_regulative_exception .
+
+    METHODS generate_delivery_id
+      IMPORTING
+        iv_save_db               TYPE abap_boolean DEFAULT abap_true
+      RETURNING
+        VALUE(rv_invoice_number) TYPE zetr_e_docno
       RAISING
         zcx_etr_regulative_exception .

@@ -1,14 +1,14 @@
 managed implementation in class zbp_etr_ddl_i_outgoing_deliver unique;
 strict ( 1 );
 
-define behavior for zetr_ddl_i_outgoing_deliveries //alias <alias_name>
+define behavior for zetr_ddl_i_outgoing_deliveries alias OutgoingDeliveries
 //persistent table <???>
 with unmanaged save
 lock master
 authorization master ( instance )
 //etag master <field_name>
 {
-//  create;
+  //  create;
   update ( features : instance );
   delete ( features : instance );
 
@@ -49,10 +49,10 @@ authorization master ( instance )
   action ( features : instance ) sendDeliveries result [1] $self;
   action ( features : instance ) archiveDeliveries result [1] $self;
   action ( features : instance ) statusUpdate result [1] $self;
-  action ( features : instance ) setAsRejected parameter zetr_ddl_i_reject_selection result [1] $self;
+  action ( features : instance ) setAsRejected parameter ZETR_DDL_I_NOTE_SELECTION result [1] $self;
 }
 
-define behavior for zetr_ddl_i_outgoing_delcont //alias <alias_name>
+define behavior for zetr_ddl_i_outgoing_delcont alias DeliveryContents
 persistent table zetr_t_arcd
 lock dependent by _outgoingDeliveries
 authorization dependent by _outgoingDeliveries
@@ -62,7 +62,7 @@ authorization dependent by _outgoingDeliveries
   delete;
 
   field ( readonly ) DocumentUUID;
-  field ( readonly : update ) ContentType;
+  field ( readonly : update ) DocumentType, ContentType;
 
   association _outgoingDeliveries;
 
@@ -71,11 +71,12 @@ authorization dependent by _outgoingDeliveries
       ArchiveUUID  = arcid;
       DocumentUUID = docui;
       ContentType  = conty;
+      DocumentType = docty;
       Content      = contn;
     }
 }
 
-define behavior for zetr_ddl_i_outgoing_dellogs //alias <alias_name>
+define behavior for zetr_ddl_i_outgoing_dellogs alias Logs
 persistent table zetr_t_logs
 lock dependent by _outgoingDeliveries
 authorization dependent by _outgoingDeliveries
@@ -100,7 +101,7 @@ authorization dependent by _outgoingDeliveries
     }
 }
 
-define behavior for zetr_ddl_i_outgoing_deltrns //alias <alias_name>
+define behavior for zetr_ddl_i_outgoing_deltrns alias Transporters
 persistent table zetr_t_odti
 lock dependent by _outgoingDeliveries
 authorization dependent by _outgoingDeliveries

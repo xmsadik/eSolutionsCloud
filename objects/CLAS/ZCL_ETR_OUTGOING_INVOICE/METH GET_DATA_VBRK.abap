@@ -25,12 +25,15 @@
       FROM zetr_t_inv_cond
       INTO TABLE @ms_billing_data-conditions.
 
-    SELECT SINGLE companycode AS bukrs,
-                  currency AS waers,
-                  country AS land1,
-                  CASE WHEN CountryChartOfAccounts IS NOT INITIAL THEN CountryChartOfAccounts
-                  ELSE chartofaccounts END AS ktopl
-      FROM I_CompanyCode
+    SELECT SINGLE company~companycode AS bukrs,
+                  company~currency AS waers,
+                  company~country AS land1,
+                  CASE WHEN company~CountryChartOfAccounts IS NOT INITIAL THEN CountryChartOfAccounts
+                  ELSE company~chartofaccounts END AS ktopl,
+                  country~taxcalculationprocedure AS kalsm
+      FROM I_CompanyCode AS company
+      INNER JOIN i_country AS country
+        ON country~country = company~country
       WHERE companycode = @ms_document-bukrs
       INTO CORRESPONDING FIELDS OF @ms_billing_data-t001.
 

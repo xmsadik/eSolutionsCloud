@@ -60,6 +60,17 @@
     "SCRTEXT_S":"Ac.dlv.tim",
     "SCRTEXT_M":"Actual delivery time",
     "SCRTEXT_L":"Actual delivery time"
+   },
+   {
+    "ROLLNAME":"ZETR_E_ADTIM",
+    "DDLANGUAGE":"T",
+    "AS4LOCAL":"N",
+    "AS4VERS":0,
+    "DDTEXT":"Teslim zamanı",
+    "REPTEXT":"Teslim zamanı",
+    "SCRTEXT_S":"Teslim zmn",
+    "SCRTEXT_M":"Teslim zamanı",
+    "SCRTEXT_L":"Teslim zamanı"
    }
   ]
  },

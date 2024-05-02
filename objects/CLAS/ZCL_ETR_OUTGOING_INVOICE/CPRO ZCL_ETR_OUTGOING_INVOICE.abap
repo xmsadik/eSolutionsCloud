@@ -86,6 +86,8 @@
       RAISING
         zcx_etr_regulative_exception .
     METHODS build_invoice_data_common_item
+      IMPORTING
+        iv_kalsm TYPE mty_kalsm
       RAISING
         zcx_etr_regulative_exception .
     METHODS fill_common_tax_totals

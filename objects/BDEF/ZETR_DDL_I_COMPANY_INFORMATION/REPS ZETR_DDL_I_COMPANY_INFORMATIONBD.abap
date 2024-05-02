@@ -39,6 +39,7 @@ authorization master ( instance )
   delete;
   association _companyIdentification { create; }
   association _companyParameters { create; }
+  association _referenceClasses { create; }
 }
 
 define behavior for zetr_ddl_i_company_identify //alias <alias_name>
@@ -78,5 +79,25 @@ authorization dependent by _companyInformation
   field ( readonly ) CompanyCode;
   field ( readonly : update ) CustomParameter;
   field ( mandatory ) Value;
+  association _companyInformation;
+}
+
+define behavior for zetr_ddl_i_reference_classes //alias <alias_name>
+persistent table zetr_t_refcl
+lock dependent by _companyInformation
+authorization dependent by _companyInformation
+//etag master <field_name>
+{
+  mapping for zetr_t_refcl
+    {
+      CompanyCode        = bukrs;
+      ParentClassName    = prncl;
+      ReferenceClassName = refcl;
+    }
+  update;
+  delete;
+  field ( readonly ) CompanyCode;
+  field ( readonly : update ) ParentClassName;
+  field ( mandatory ) ReferenceClassName;
   association _companyInformation;
 }

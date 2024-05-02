@@ -9,6 +9,7 @@ define behavior for zetr_ddl_p_company_information //alias <alias_name>
 
   use association _companyIdentification { create; }
   use association _companyParameters { create; }
+  use association _referenceClasses { create; }
 }
 
 define behavior for zetr_ddl_p_company_identify //alias <alias_name>
@@ -20,6 +21,14 @@ define behavior for zetr_ddl_p_company_identify //alias <alias_name>
 }
 
 define behavior for zetr_ddl_p_company_parameters //alias <alias_name>
+{
+  use update;
+  use delete;
+
+  use association _companyInformation;
+}
+
+define behavior for zetr_ddl_p_reference_classes //alias <alias_name>
 {
   use update;
   use delete;

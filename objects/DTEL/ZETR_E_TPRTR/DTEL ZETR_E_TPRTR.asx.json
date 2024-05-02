@@ -60,6 +60,17 @@
     "SCRTEXT_S":"Transporte",
     "SCRTEXT_M":"Transporter",
     "SCRTEXT_L":"Transporter"
+   },
+   {
+    "ROLLNAME":"ZETR_E_TPRTR",
+    "DDLANGUAGE":"T",
+    "AS4LOCAL":"N",
+    "AS4VERS":0,
+    "DDTEXT":"Taşıyıcı",
+    "REPTEXT":"Taşıyıcı",
+    "SCRTEXT_S":"Taşıyıcı",
+    "SCRTEXT_M":"Taşıyıcı",
+    "SCRTEXT_L":"Taşıyıcı"
    }
   ]
  },

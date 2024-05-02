@@ -60,6 +60,17 @@
     "SCRTEXT_S":"Trns.type",
     "SCRTEXT_M":"Transporter type",
     "SCRTEXT_L":"Transporter type"
+   },
+   {
+    "ROLLNAME":"ZETR_E_TRNST",
+    "DDLANGUAGE":"T",
+    "AS4LOCAL":"N",
+    "AS4VERS":0,
+    "DDTEXT":"Taşıyıcı Türü",
+    "REPTEXT":"Taşıyıcı Türü",
+    "SCRTEXT_S":"Tşy.tür.",
+    "SCRTEXT_M":"Taşıyıcı Türü",
+    "SCRTEXT_L":"Taşıyıcı Türü"
    }
   ]
  },

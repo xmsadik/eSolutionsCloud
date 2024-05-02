@@ -6,10 +6,10 @@
     LOOP AT lt_output ASSIGNING FIELD-SYMBOL(<ls_output>).
       <ls_output>-DocumentDisplayURL = 'https://' && zcl_etr_regulative_common=>get_ui_url( ) && '/ui#'.
       CASE <ls_output>-DocumentType(4).
-        WHEN 'VBRK'.
+        WHEN 'LIKP'.
           <ls_output>-DocumentDisplayURL = <ls_output>-DocumentDisplayURL &&
                                            'BillingDocument-displayBillingDocument?BillingDocument=' && <ls_output>-DocumentNumber.
-        WHEN 'RMRP'.
+        WHEN 'MKPF'.
           <ls_output>-DocumentDisplayURL = <ls_output>-DocumentDisplayURL &&
                                            'SupplierInvoice-displayAdvanced?SupplierInvoice=' && <ls_output>-DocumentNumber &&
                                            '&FiscalYear=' && <ls_output>-FiscalYear.

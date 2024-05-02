@@ -29,6 +29,13 @@
     "DDLANGUAGE":"E",
     "AS4LOCAL":"N",
     "DDTEXT":"Outgoing Delivery Transporters"
+   },
+   {
+    "DDLNAME":"ZETR_DDL_I_OUTGOING_DELTRNS",
+    "STRUCOBJN":"ZETR_DDL_I_OUTGOING_DELTRNS",
+    "DDLANGUAGE":"T",
+    "AS4LOCAL":"N",
+    "DDTEXT":"Giden İrsaliye Taşıyıcıları"
    }
   ]
  },

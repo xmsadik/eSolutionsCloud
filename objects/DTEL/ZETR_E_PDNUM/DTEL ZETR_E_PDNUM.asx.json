@@ -60,6 +60,17 @@
     "SCRTEXT_S":"Prn.doc.no",
     "SCRTEXT_M":"Prn.doc.num.",
     "SCRTEXT_L":"Printed document number"
+   },
+   {
+    "ROLLNAME":"ZETR_E_PDNUM",
+    "DDLANGUAGE":"T",
+    "AS4LOCAL":"N",
+    "AS4VERS":0,
+    "DDTEXT":"Matbu belge no",
+    "REPTEXT":"Matbu belge no",
+    "SCRTEXT_S":"Matbu blg.",
+    "SCRTEXT_M":"Matbu belge",
+    "SCRTEXT_L":"Matbu belge no"
    }
   ]
  },

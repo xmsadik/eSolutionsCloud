@@ -21,6 +21,7 @@ CLASS zcl_etr_outgoing_invoice DEFINITION
     TYPES waers TYPE waers.
     TYPES land1 TYPE land1.
     TYPES ktopl TYPE ktopl.
+    TYPES kalsm TYPE c LENGTH 6.
     TYPES END OF mty_t001.
 
     TYPES BEGIN OF mty_t005.
@@ -301,6 +302,7 @@ CLASS zcl_etr_outgoing_invoice DEFINITION
 
     TYPES mty_hash_code TYPE string.
     TYPES mty_invoice_rules_out TYPE STANDARD TABLE OF zetr_s_invoice_rules_out WITH EMPTY KEY.
+    TYPES mty_kalsm TYPE c LENGTH 6.
 
     CLASS-METHODS factory
       IMPORTING

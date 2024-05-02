@@ -173,6 +173,27 @@
     "ELEMENT":"",
     "NAME":"UI.HEADERINFO.TYPENAMEPLURAL",
     "TEXT":"Transporters"
+   },
+   {
+    "DDLXNAME":"ZETR_DDL_E_OUTGOING_DELTRNS",
+    "DDLANGUAGE":"T",
+    "ELEMENT":"",
+    "NAME":"UI.HEADERINFO.TITLE.LABEL",
+    "TEXT":"Taşıyıcılar"
+   },
+   {
+    "DDLXNAME":"ZETR_DDL_E_OUTGOING_DELTRNS",
+    "DDLANGUAGE":"T",
+    "ELEMENT":"",
+    "NAME":"UI.HEADERINFO.TYPENAME",
+    "TEXT":"Taşıyıcı"
+   },
+   {
+    "DDLXNAME":"ZETR_DDL_E_OUTGOING_DELTRNS",
+    "DDLANGUAGE":"T",
+    "ELEMENT":"",
+    "NAME":"UI.HEADERINFO.TYPENAMEPLURAL",
+    "TEXT":"Taşıyıcılar"
    }
   ]
  },

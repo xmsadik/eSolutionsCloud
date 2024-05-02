@@ -29,6 +29,13 @@
     "DDLANGUAGE":"E",
     "AS4LOCAL":"N",
     "DDTEXT":"Outgoing Delivery Logs"
+   },
+   {
+    "DDLNAME":"ZETR_DDL_I_OUTGOING_DELLOGS",
+    "STRUCOBJN":"ZETR_DDL_I_OUTGOING_DELLOGS",
+    "DDLANGUAGE":"T",
+    "AS4LOCAL":"N",
+    "DDTEXT":"Giden İrsaliye Logları"
    }
   ]
  },
