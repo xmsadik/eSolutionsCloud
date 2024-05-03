@@ -65,6 +65,9 @@ CLASS lhc_zetr_ddl_i_outgoing_invoic IMPLEMENTATION.
                         %field-invoicenote = COND #( WHEN ls_invoice-statuscode <> '' AND ls_invoice-statuscode <> '2'
                                                      THEN if_abap_behv=>fc-f-read_only
                                                    ELSE if_abap_behv=>fc-f-unrestricted  )
+*                        %field-StatusCode = COND #( WHEN ls_invoice-statuscode <> '' AND ls_invoice-statuscode <> '2'
+*                                                     THEN if_abap_behv=>fc-f-read_only
+*                                                   ELSE if_abap_behv=>fc-f-unrestricted  )
                         %field-invoicetype = COND #( WHEN ls_invoice-statuscode <> '' AND ls_invoice-statuscode <> '2'
                                                      THEN if_abap_behv=>fc-f-read_only
                                                    ELSE if_abap_behv=>fc-f-unrestricted  )

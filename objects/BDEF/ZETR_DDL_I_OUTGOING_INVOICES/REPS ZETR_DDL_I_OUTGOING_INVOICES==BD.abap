@@ -25,6 +25,10 @@ authorization master ( global, instance )
   TaxExemption,
   CollectItems,
   InvoiceNote;
+//  StatusCode,
+//  StatusDetail,
+//  Response,
+//  TRAStatusCode;
 
   mapping for zetr_t_oginv
     {

@@ -14,8 +14,9 @@
     SELECT SINGLE company~companycode AS bukrs,
                   company~currency AS waers,
                   company~country AS land1,
-                  CASE WHEN company~CountryChartOfAccounts IS NOT INITIAL THEN CountryChartOfAccounts
-                  ELSE company~chartofaccounts END AS ktopl,
+*                  CASE WHEN company~CountryChartOfAccounts IS NOT INITIAL THEN CountryChartOfAccounts
+*                  ELSE company~chartofaccounts END AS ktopl,
+                  company~chartofaccounts AS ktopl,
                   country~taxcalculationprocedure AS kalsm
       FROM I_CompanyCode AS company
       INNER JOIN i_country AS country
