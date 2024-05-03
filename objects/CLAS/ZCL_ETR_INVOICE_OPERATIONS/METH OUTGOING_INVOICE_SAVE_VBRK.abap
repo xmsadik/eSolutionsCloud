@@ -314,11 +314,11 @@
           ELSE.
             CASE ls_document-prfid.
               WHEN 'IHRACAT'.
-                lv_insrt = 'E'.
+                lv_insrt = 'IHRACAT'.
               WHEN 'YOLCU'.
-                lv_insrt = 'T'.
+                lv_insrt = 'YOLCU'.
               WHEN OTHERS.
-                lv_insrt = 'D'.
+                lv_insrt = 'YURTICI'.
             ENDCASE.
             SELECT SINGLE serpr
               FROM zetr_t_eiser

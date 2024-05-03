@@ -132,7 +132,7 @@
     ls_document-bldat = ls_bkpf-bldat.
     ls_document-werks = ls_bseg-werks.
 
-    ls_invoice_rule_input-awtyp = iv_awtyp.
+    ls_invoice_rule_input-awtyp = iv_awtyp(4).
     ls_invoice_rule_input-fidty = ls_bkpf-blart.
     ls_invoice_rule_input-partner = ls_document-partner.
     ls_invoice_rule_input-werks = ls_bseg-werks.
@@ -337,11 +337,11 @@
           ELSE.
             CASE ls_document-prfid.
               WHEN 'IHRACAT'.
-                lv_insrt = 'E'.
+                lv_insrt = 'IHRACAT'.
               WHEN 'YOLCU'.
-                lv_insrt = 'T'.
+                lv_insrt = 'YOLCU'.
               WHEN OTHERS.
-                lv_insrt = 'D'.
+                lv_insrt = 'YURTICI'.
             ENDCASE.
             SELECT SINGLE serpr
               FROM zetr_t_eiser

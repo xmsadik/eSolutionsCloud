@@ -73,7 +73,7 @@
       LEFT OUTER JOIN i_salesdocumentitem AS vbap
         ON  vbap~salesdocument = vbrp~salesdocument
         AND vbap~salesdocumentitem = vbrp~salesdocumentitem
-      LEFT OUTER JOIN I_SDDocumentItemPartner AS vbpa
+      LEFT OUTER JOIN I_SDDocumentItemPartner WITH PRIVILEGED ACCESS AS vbpa
         ON  vbpa~SDDocument = vbrp~billingdocument
         AND vbpa~sddocumentitem = vbrp~BillingDocumentItem
         AND vbpa~partnerfunction = 'WE'
