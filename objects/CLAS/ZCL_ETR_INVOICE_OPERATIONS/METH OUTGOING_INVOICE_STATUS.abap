@@ -35,6 +35,8 @@
 
       IF rs_status-stacd IS INITIAL.
         rs_status-stacd = ls_document-stacd.
+      ELSEIF rs_status-stacd = '2'.
+        CLEAR rs_status-resst.
       ENDIF.
       IF rs_status-invno IS INITIAL AND ls_document-invno IS NOT INITIAL.
         rs_status-invno = ls_document-invno.
