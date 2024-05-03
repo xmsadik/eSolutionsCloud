@@ -57,7 +57,7 @@
            vbak~salesdocumentdate AS audat,
            vbap~MaterialByCustomer AS aumat,
            ' ' AS aubst,
-           ' ' AS auvsa,
+           vbap~ShippingType AS auvsa,
            vbpa~customer AS kunwe,
            vbpa~addressid AS adrwe
       FROM i_billingdocumentitem AS vbrp
