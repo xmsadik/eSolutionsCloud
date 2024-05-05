@@ -38,6 +38,11 @@ CLASS lhc_zetr_ddl_i_outgoing_invoic IMPLEMENTATION.
         RESULT DATA(lt_invoices)
         FAILED failed.
     CHECK lt_invoices IS NOT INITIAL.
+    SELECT *
+      FROM zetr_t_usaut
+      FOR ALL ENTRIES IN @lt_invoices
+      WHERE bukrs = @lt_invoices-CompanyCode
+      INTO TABLE @DATA(lt_authorizations).
     result = VALUE #( FOR ls_invoice IN lt_invoices
                       ( %tky = ls_invoice-%tky
                         %action-sendinvoices = COND #( WHEN ls_invoice-statuscode <> '' AND ls_invoice-statuscode <> '2'
@@ -65,9 +70,18 @@ CLASS lhc_zetr_ddl_i_outgoing_invoic IMPLEMENTATION.
                         %field-invoicenote = COND #( WHEN ls_invoice-statuscode <> '' AND ls_invoice-statuscode <> '2'
                                                      THEN if_abap_behv=>fc-f-read_only
                                                    ELSE if_abap_behv=>fc-f-unrestricted  )
-*                        %field-StatusCode = COND #( WHEN ls_invoice-statuscode <> '' AND ls_invoice-statuscode <> '2'
-*                                                     THEN if_abap_behv=>fc-f-read_only
-*                                                   ELSE if_abap_behv=>fc-f-unrestricted  )
+                        %field-StatusCode = COND #( WHEN line_exists( lt_authorizations[ bukrs = ls_invoice-CompanyCode ogisc = abap_true ] )
+                                                     THEN if_abap_behv=>fc-f-unrestricted
+                                                   ELSE if_abap_behv=>fc-f-read_only  )
+                        %field-StatusDetail = COND #( WHEN line_exists( lt_authorizations[ bukrs = ls_invoice-CompanyCode ogisc = abap_true ] )
+                                                     THEN if_abap_behv=>fc-f-unrestricted
+                                                   ELSE if_abap_behv=>fc-f-read_only  )
+                        %field-TRAStatusCode = COND #( WHEN line_exists( lt_authorizations[ bukrs = ls_invoice-CompanyCode ogisc = abap_true ] )
+                                                     THEN if_abap_behv=>fc-f-unrestricted
+                                                   ELSE if_abap_behv=>fc-f-read_only  )
+                        %field-Response = COND #( WHEN line_exists( lt_authorizations[ bukrs = ls_invoice-CompanyCode ogisc = abap_true ] )
+                                                     THEN if_abap_behv=>fc-f-unrestricted
+                                                   ELSE if_abap_behv=>fc-f-read_only  )
                         %field-invoicetype = COND #( WHEN ls_invoice-statuscode <> '' AND ls_invoice-statuscode <> '2'
                                                      THEN if_abap_behv=>fc-f-read_only
                                                    ELSE if_abap_behv=>fc-f-unrestricted  )

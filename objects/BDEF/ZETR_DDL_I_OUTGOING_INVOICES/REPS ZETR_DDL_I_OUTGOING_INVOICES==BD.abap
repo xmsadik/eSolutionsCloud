@@ -24,11 +24,11 @@ authorization master ( global, instance )
   XSLTTemplate,
   TaxExemption,
   CollectItems,
-  InvoiceNote;
-//  StatusCode,
-//  StatusDetail,
-//  Response,
-//  TRAStatusCode;
+  InvoiceNote,
+  StatusCode,
+  StatusDetail,
+  Response,
+  TRAStatusCode;
 
   mapping for zetr_t_oginv
     {

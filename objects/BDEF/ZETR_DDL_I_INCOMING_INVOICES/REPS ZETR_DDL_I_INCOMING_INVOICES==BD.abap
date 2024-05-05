@@ -37,6 +37,8 @@ authorization master ( instance )
       ResponseStatus    = resst;
       TRAStatusCode     = radsc;
       StatusDetail      = staex;
+      PurchasingGroup   = ekgrp;
+      PurchaseOrders    = ebeln;
     }
 
   //  create;
@@ -59,7 +61,9 @@ authorization master ( instance )
   LastNote,
   Archived,
   Printed,
+  ApplicationResponse,
   Processed;
+//  field ( features : instance ) PurchasingGroup, PurchaseOrders;
   association _invoiceContents { create; }
   association _invoiceLogs { create; }
 

@@ -7,9 +7,9 @@
     "SRVDNAME":"ZETR_DDL_S_COMPANY_INFORMATION",
     "VERSION":"A",
     "CHANGED_BY":"SAP_CUSTOMER",
-    "CHANGED_ON":"2024-05-02",
-    "CHANGED_AT":"13:31:15",
-    "DT_UUID":"995523DB13041EEF829107FA29DAA027",
+    "CHANGED_ON":"2024-05-05",
+    "CHANGED_AT":"11:34:20",
+    "DT_UUID":"995523DB13041EEF82DA6D37A88D0033",
     "SOURCE_ORIGIN":"0",
     "SRVD_SOURCE_TYPE":"S",
     "ABAP_LANGUAGE_VERSION":"5"
@@ -35,7 +35,7 @@
    {
     "SRVDNAME":"ZETR_DDL_S_COMPANY_INFORMATION",
     "VERSION":"A",
-    "SOURCE":"@EndUserText.label: 'Company Information'\r\ndefine service Zetr_ddl_s_company_information {\r\n  expose zetr_ddl_p_company_information as CompanyInformation;\r\n  expose zetr_ddl_p_company_identify    as CompanyIdentifications;\r\n  expose zetr_ddl_p_company_parameters  as CompanyParameters;\r\n  expose zetr_ddl_p_reference_classes   as ReferenceClasses;\r\n}"
+    "SOURCE":"@EndUserText.label: 'Company Information'\r\ndefine service Zetr_ddl_s_company_information {\r\n  expose zetr_ddl_p_company_information as CompanyInformation;\r\n  expose zetr_ddl_p_company_identify    as CompanyIdentifications;\r\n  expose zetr_ddl_p_company_parameters  as CompanyParameters;\r\n  expose zetr_ddl_p_reference_classes   as ReferenceClasses;\r\n  expose zetr_ddl_p_user_authorizations as UserAuthorizations;\r\n}"
    }
   ]
  },
@@ -101,6 +101,15 @@
     "EXPOSED_ALIAS":"REFERENCECLASSES",
     "EXPOSED_ALIAS_RAW":"ReferenceClasses",
     "INCL_SERVICE":""
+   },
+   {
+    "SRVDNAME":"ZETR_DDL_S_COMPANY_INFORMATION",
+    "SERVICE":"ZETR_DDL_S_COMPANY_INFORMATION",
+    "EXPOSED_ARTIFACT":"ZETR_DDL_P_USER_AUTHORIZATIONS",
+    "EXPOSED_ARTIFACT_TYPE":"E",
+    "EXPOSED_ALIAS":"USERAUTHORIZATIONS",
+    "EXPOSED_ALIAS_RAW":"UserAuthorizations",
+    "INCL_SERVICE":""
    }
   ]
  },
@@ -113,8 +122,8 @@
     "SERVICE":"ZETR_DDL_S_COMPANY_INFORMATION",
     "SERVICE_RAW":"Zetr_ddl_s_company_information",
     "SOURCE_TYPE":"S",
-    "DT_UUID":"995523DB13041EEF829107FA29DAA027",
-    "RT_HASH":"14C1281E13C1C412496CB1132E25A5F7424EC014",
+    "DT_UUID":"995523DB13041EEF82DA6D37A88D0033",
+    "RT_HASH":"4F3A8166EC5512E85BC67F248D9E9223DEB279D8",
     "GEN_VERSION":"0"
    }
   ]

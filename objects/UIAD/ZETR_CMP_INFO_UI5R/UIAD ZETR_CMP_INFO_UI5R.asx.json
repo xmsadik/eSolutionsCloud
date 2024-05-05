@@ -6,16 +6,16 @@
    {
     "APP_ID":"ZETR_CMP_INFO_UI5R",
     "CAT_ID":"SAP_TC_UI5_REPO_UIAD",
-    "SEM_OBJ":"zetr_ddl_b_company_info",
+    "SEM_OBJ":"zetr_company_information",
     "SEM_ACT":"display",
-    "TARGET_MAPPING_ID":"UI5R_7B58D76C158924EB4BE343E458F814254FBFA552_TM",
-    "TILE_ID":"UI5R_7B58D76C158924EB4BE343E458F814254FBFA552_AL",
+    "TARGET_MAPPING_ID":"UI5R_85903CCBD92E7D0B92A573646EE80D77801A4C8A_TM",
+    "TILE_ID":"UI5R_85903CCBD92E7D0B92A573646EE80D77801A4C8A_AL",
     "APP_TYPE":"U",
     "TCODE":"",
     "WD_APPL_ID":"",
     "WD_CONF_ID":"",
     "WCF_TARGET_ID":"",
-    "UI5_APP_ID":"zetrddlbcompanyinfo",
+    "UI5_APP_ID":"zetrcompanyinformation",
     "FIORI_ID":"",
     "ICF_PATH":"",
     "SYSTEM_ALIAS":"",
@@ -33,7 +33,7 @@
     "REFRESH_INTERVALL":0,
     "DISPLAY_NUMBER_UNIT":"",
     "FLAVOR_ID":"",
-    "CHANGED_AT":"+020240226083836",
+    "CHANGED_AT":"+020240505170218",
     "CHANGED_BY":"SAP_CUSTOMER",
     "MASTERLANG":"",
     "ACH_COMPONENT":"",
@@ -57,7 +57,7 @@
   [
    {
     "APP_ID":"ZETR_CMP_INFO_UI5R",
-    "TILE_ID":"UI5R_7B58D76C158924EB4BE343E458F814254FBFA552_AL",
+    "TILE_ID":"UI5R_85903CCBD92E7D0B92A573646EE80D77801A4C8A_AL",
     "TILE_TYPE":"S",
     "CUSTOM_TILE_TYPE":"",
     "DEFAULT_TILE":"X",
@@ -80,7 +80,7 @@
    {
     "LANGU":"E",
     "APP_ID":"ZETR_CMP_INFO_UI5R",
-    "TILE_ID":"UI5R_7B58D76C158924EB4BE343E458F814254FBFA552_AL",
+    "TILE_ID":"UI5R_85903CCBD92E7D0B92A573646EE80D77801A4C8A_AL",
     "TILE_TITLE":"eSolutions - Company Information",
     "TILE_SUBTITLE":"",
     "TILE_KEYWORDS":"",
@@ -89,8 +89,8 @@
    {
     "LANGU":"T",
     "APP_ID":"ZETR_CMP_INFO_UI5R",
-    "TILE_ID":"UI5R_7B58D76C158924EB4BE343E458F814254FBFA552_AL",
-    "TILE_TITLE":"eÇözümler - Şirket Bilgileri",
+    "TILE_ID":"UI5R_85903CCBD92E7D0B92A573646EE80D77801A4C8A_AL",
+    "TILE_TITLE":"eÇözümler - Şirket Verileri",
     "TILE_SUBTITLE":"",
     "TILE_KEYWORDS":"",
     "TILE_INFORMATION":""
@@ -103,7 +103,7 @@
   [
    {
     "APP_ID":"ZETR_CMP_INFO_UI5R",
-    "TILE_ID":"UI5R_7B58D76C158924EB4BE343E458F814254FBFA552_AL",
+    "TILE_ID":"UI5R_85903CCBD92E7D0B92A573646EE80D77801A4C8A_AL",
     "BAG_ID":"                                                                                                  1",
     "NAME":"display_title_text",
     "TRANSLATABLE":"",
@@ -111,7 +111,7 @@
    },
    {
     "APP_ID":"ZETR_CMP_INFO_UI5R",
-    "TILE_ID":"UI5R_7B58D76C158924EB4BE343E458F814254FBFA552_AL",
+    "TILE_ID":"UI5R_85903CCBD92E7D0B92A573646EE80D77801A4C8A_AL",
     "BAG_ID":"                                                                                                  2",
     "NAME":"display_subtitle_text",
     "TRANSLATABLE":"",
@@ -119,7 +119,7 @@
    },
    {
     "APP_ID":"ZETR_CMP_INFO_UI5R",
-    "TILE_ID":"UI5R_7B58D76C158924EB4BE343E458F814254FBFA552_AL",
+    "TILE_ID":"UI5R_85903CCBD92E7D0B92A573646EE80D77801A4C8A_AL",
     "BAG_ID":"                                                                                                  3",
     "NAME":"display_info_text",
     "TRANSLATABLE":"",
@@ -127,7 +127,7 @@
    },
    {
     "APP_ID":"ZETR_CMP_INFO_UI5R",
-    "TILE_ID":"UI5R_7B58D76C158924EB4BE343E458F814254FBFA552_AL",
+    "TILE_ID":"UI5R_85903CCBD92E7D0B92A573646EE80D77801A4C8A_AL",
     "BAG_ID":"                                                                                                  4",
     "NAME":"display_search_keywords",
     "TRANSLATABLE":"",
@@ -151,11 +151,11 @@
    {
     "APP_ID":"ZETR_CMP_INFO_UI5R",
     "LANGU":"T",
-    "TILE_TITLE":"eÇözümler - Şirket Bilgileri",
+    "TILE_TITLE":"eÇözümler - Şirket Verileri",
     "TILE_SUBTITLE":"",
     "TILE_KEYWORDS":"",
     "TILE_INFORMATION":"",
-    "ALT_SMART_LINK_TITLE":"eÇözümler - Şirket Bilgileri"
+    "ALT_SMART_LINK_TITLE":"eÇözümler - Şirket Verileri"
    }
   ]
  },
@@ -183,8 +183,8 @@
     "CRELEASE":"",
     "DELFLAG":"",
     "TRANSLTTXT":"",
-    "CREATED_ON":"2024-02-26",
-    "CHECK_DATE":"2024-02-26",
+    "CREATED_ON":"2024-05-05",
+    "CHECK_DATE":"2024-05-05",
     "CHECK_CFG":""
    }
   ]

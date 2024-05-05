@@ -40,6 +40,7 @@ CLASS lhc_InvoiceList IMPLEMENTATION.
         RESULT DATA(lt_invoices)
         FAILED failed.
     CHECK lt_invoices IS NOT INITIAL.
+
     result = VALUE #( FOR ls_invoice IN lt_invoices
                       ( %tky = ls_invoice-%tky
                         %action-sendResponse = COND #( WHEN ls_invoice-ResponseStatus <> '0'

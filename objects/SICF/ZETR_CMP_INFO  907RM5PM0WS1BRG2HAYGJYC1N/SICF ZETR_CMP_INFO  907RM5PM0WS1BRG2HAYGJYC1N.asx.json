@@ -7,7 +7,7 @@
     "ICF_NAME":"ZETR_CMP_INFO",
     "ICFPARGUID":"907RM5PM0WS1BRG2HAYGJYC1N",
     "ICF_LANGU":"E",
-    "ICF_DOCU":"Deployed with SAP Fiori tools"
+    "ICF_DOCU":"eSolutions - Company Information"
    }
   ]
  },
@@ -44,7 +44,7 @@
     "ICF_REDIR":"",
     "ICF_TIME":"00:00:00",
     "ICF_CUSER":"SAP_CUSTOMER",
-    "ICF_CDATE":"2023-11-20",
+    "ICF_CDATE":"2024-05-05",
     "ICF_MUSER":"SAP_CUSTOMER",
     "ICF_MDATE":"0000-00-00",
     "ICF_HTTPS":"",
@@ -122,8 +122,8 @@
     "CRELEASE":"",
     "DELFLAG":"",
     "TRANSLTTXT":"",
-    "CREATED_ON":"2023-11-20",
-    "CHECK_DATE":"2023-11-20",
+    "CREATED_ON":"2024-05-05",
+    "CHECK_DATE":"2024-05-05",
     "CHECK_CFG":""
    }
   ]

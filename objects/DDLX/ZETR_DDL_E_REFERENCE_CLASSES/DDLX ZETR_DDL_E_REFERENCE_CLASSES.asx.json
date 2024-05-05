@@ -194,6 +194,34 @@
     "ELEMENT":"COMPANYCODE",
     "NAME":"UI.FACET$1$.LABEL",
     "TEXT":"Reference Classes"
+   },
+   {
+    "DDLXNAME":"ZETR_DDL_E_REFERENCE_CLASSES",
+    "DDLANGUAGE":"T",
+    "ELEMENT":"",
+    "NAME":"UI.HEADERINFO.TITLE.LABEL",
+    "TEXT":"Referans Sınıflar"
+   },
+   {
+    "DDLXNAME":"ZETR_DDL_E_REFERENCE_CLASSES",
+    "DDLANGUAGE":"T",
+    "ELEMENT":"",
+    "NAME":"UI.HEADERINFO.TYPENAME",
+    "TEXT":"Referans Sınıflar"
+   },
+   {
+    "DDLXNAME":"ZETR_DDL_E_REFERENCE_CLASSES",
+    "DDLANGUAGE":"T",
+    "ELEMENT":"",
+    "NAME":"UI.HEADERINFO.TYPENAMEPLURAL",
+    "TEXT":"Referans Sınıflar"
+   },
+   {
+    "DDLXNAME":"ZETR_DDL_E_REFERENCE_CLASSES",
+    "DDLANGUAGE":"T",
+    "ELEMENT":"COMPANYCODE",
+    "NAME":"UI.FACET$1$.LABEL",
+    "TEXT":"Referans Sınıflar"
    }
   ]
  },
