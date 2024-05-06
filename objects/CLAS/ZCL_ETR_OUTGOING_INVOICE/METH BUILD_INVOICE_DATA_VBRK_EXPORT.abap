@@ -7,14 +7,15 @@
 
     rs_data-inco1 = ms_billing_data-vbrk-inco1.
 
-    IF is_vbrp-vgvsa IS NOT INITIAL.
+    IF ms_document-trnsp IS NOT INITIAL.
+      rs_data-trnty = ms_document-trnsp.
+    ELSEIF is_vbrp-vgvsa IS NOT INITIAL.
       DATA(lv_vsart) = is_vbrp-vgvsa.
     ELSE.
       lv_vsart = is_vbrp-auvsa.
     ENDIF.
 
-
-    IF lv_vsart IS NOT INITIAL.
+    IF lv_vsart IS NOT INITIAL AND rs_data-trnty IS INITIAL.
       SELECT SINGLE trnsp
         FROM zetr_t_trnmc
         WHERE vsart = @lv_vsart

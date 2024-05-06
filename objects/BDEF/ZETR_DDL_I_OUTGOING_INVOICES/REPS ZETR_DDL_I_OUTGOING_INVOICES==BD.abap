@@ -28,6 +28,7 @@ authorization master ( global, instance )
   StatusCode,
   StatusDetail,
   Response,
+  TransportType,
   TRAStatusCode;
 
   mapping for zetr_t_oginv

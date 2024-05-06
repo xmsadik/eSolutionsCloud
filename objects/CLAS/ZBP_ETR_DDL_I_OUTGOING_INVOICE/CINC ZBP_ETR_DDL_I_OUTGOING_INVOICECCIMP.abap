@@ -67,6 +67,11 @@ CLASS lhc_zetr_ddl_i_outgoing_invoic IMPLEMENTATION.
                                                    WHEN ls_invoice-profileid = 'EARSIV'
                                                      THEN if_abap_behv=>fc-f-unrestricted
                                                    ELSE if_abap_behv=>fc-f-read_only  )
+                        %field-TransportType = COND #( WHEN ls_invoice-statuscode <> '' AND ls_invoice-statuscode <> '2'
+                                                     THEN if_abap_behv=>fc-f-read_only
+                                                   WHEN ls_invoice-profileid = 'IHRACAT'
+                                                     THEN if_abap_behv=>fc-f-unrestricted
+                                                   ELSE if_abap_behv=>fc-f-read_only  )
                         %field-invoicenote = COND #( WHEN ls_invoice-statuscode <> '' AND ls_invoice-statuscode <> '2'
                                                      THEN if_abap_behv=>fc-f-read_only
                                                    ELSE if_abap_behv=>fc-f-unrestricted  )
