@@ -242,10 +242,13 @@ CLASS lhc_zetr_ddl_i_outgoing_invoic IMPLEMENTATION.
         WHERE PartnerType = 'C'
         INTO @DATA(CustomsOfficeTaxID).
       IF sy-subrc = 0.
-        SELECT SINGLE aliass
+        SELECT aliass
           FROM zetr_t_inv_ruser
           WHERE taxid = @CustomsOfficeTaxID
-          INTO @DATA(CustomsOfficeAlias).
+          ORDER BY defal DESCENDING
+          INTO @DATA(CustomsOfficeAlias)
+          UP TO 1 ROWS.
+        ENDSELECT.
       ENDIF.
     ENDIF.
 
