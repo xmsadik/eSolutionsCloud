@@ -706,6 +706,9 @@ CLASS lsc_zetr_ddl_i_outgoing_invoic IMPLEMENTATION.
         IF ls_update-%control-TRAStatusCode = if_abap_behv=>mk-on.
           <ls_invoice>-radsc = ls_update-TRAStatusCode.
         ENDIF.
+        IF ls_update-%control-TransportType = if_abap_behv=>mk-on.
+          <ls_invoice>-trnsp = ls_update-TransportType.
+        ENDIF.
         IF ls_update-%control-Resendable = if_abap_behv=>mk-on.
           <ls_invoice>-rsend = ls_update-Resendable.
         ENDIF.
