@@ -66,6 +66,7 @@ authorization master ( global, instance )
       SendTime              = sndtm;
       InvoiceIDSaved        = inids;
       CollectItems          = itmcl;
+      TransportType         = trnsp;
       StatusCode            = stacd;
       StatusDetail          = staex;
       Response              = resst;
